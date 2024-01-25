@@ -1,7 +1,26 @@
 /* GLOBAL */
 @import "./global/variables.scss";
-@import "./global/global.scss";
 @import "./global/fonts.scss";
+@import "./global/global.scss";
+@import "./visually-hidden.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/main-welcome.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/nutrition.scss";
+@import "./blocks/example.scss";
+@import "./blocks/address.scss";
+@import "./blocks/form-container.scss";
+@import "./blocks/text-fields.scss";
+@import "./blocks/radio-fields.scss";
+@import "./blocks/contact-fields.scss";
+@import "./blocks/textarea-fields.scss";
+@import "./blocks/checkbox-fields.scss";
+@import "./blocks/catalog-container.scss";
+@import "./blocks/gallary.scss";
+@import "./blocks/extra-goods.scss";
+@import "./blocks/present.scss";
+
+

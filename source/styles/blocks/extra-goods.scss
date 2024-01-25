@@ -1,0 +1,20 @@
+.extra-goods__title {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $title-color;
+}
+
+.extra-goods__product {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: $secondary-text-color;
+  text-transform: uppercase;
+}
+
+.extra-goods__nomination,
+.extra-goods__value {
+  line-height: 14px;
+  color: $primary-text-color;
+}

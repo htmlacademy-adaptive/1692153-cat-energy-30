@@ -1,0 +1,26 @@
+.example__title {
+  text-align: center;
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 40px;
+  color: $title-color;
+}
+
+.example__description {
+  color: $primary-text-color;
+}
+
+.example__number {
+  text-align: center;
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  color: $title-color;
+}
+
+.example__index {
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+  color: $primary-text-color;
+}
