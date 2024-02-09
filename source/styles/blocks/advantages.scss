@@ -5,6 +5,13 @@
   line-height: 37px;
   color: $title-color;
   text-transform: uppercase;
+  padding-left: 90px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__title {
+    padding-left: 390px;
+  }
 }
 
 .advantages__description {
@@ -17,4 +24,48 @@
   line-height: 16px;
   color: $title-color;
   text-transform: uppercase;
+}
+
+.advantages__title--cat-slim {
+  display: block;
+  width: 36px;
+  height: 50px;
+  background-image: url("../../images/icons/cat-slim.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__title--cat-slim {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__title--cat-slim {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.advantages__title--cat-pro {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url("../../images/icons/cat-pro.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__title--cat-pro {
+    width: 260px;
+    height: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__title--cat-pro {
+    width: 134px;
+    height: 100px;
+  }
 }

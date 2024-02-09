@@ -13,9 +13,16 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <a class="main-header__logo">
-        <img src="images/icons/main-icon-mobile@2x@2x.png" width="38" height="38" alt="Иконка Кэт Энерджи">
-        <img src="images/logos/cat-energy-logo.svg" width="101" height="18" alt="Логотип Кэт Энерджи">
+      <div class="main-header__wrapper">
+        <span class="main-header__logo"></span>
+        <a class="main-logo-mobile" href="#">
+          <picture>
+             <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/content-vector/main-logo-desktop.svg" width="202" height="59">
+             <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/content-vector/main-logo-tablet.svg" width="174" height="50">
+            <img src="images/content-vector/main-logo-mobile.svg" width="101" height="18" alt="Логотип Cat Energy.">
+          </picture>
+        </a>
+      </div>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
@@ -24,16 +31,15 @@
                 <a href="index.html">Главная</a>
               </li>
               <li class="main-nav__item main-nav__item--current">
-                <a href="catalog.html">Каталог продукции</a>
+                <a href="#">Каталог продукции</a>
               </li>
-              <li class="main-nav__item ">
+              <li class="main-nav__item">
                 <a href="form.html">Подбор программы</a>
               </li>
             </ul>
           </div>
         </nav>
-      </a>
-  </header>
+    </header>
   <main class="catalog-container">
     <h1 class="catalog-container__title">Каталог продукции</h1>
     <section class="gallery">
@@ -209,15 +215,15 @@
         </div>
         <button class="extra-goods__button button">Заказать</button>
       </dl>
-    </section>
     <hr>
-    <section class="present">
+    <div class="present">
       <p class="present__text">
         Закажите все<br>
         и получите чехол для<br>
         кота в подарок!<br>
       </p>
-    </section>
+    </div>
+  </section>
     <section class="address">
       <h4 class="address__title">Приглашаем к сотрудничеству дилеров!</h4>
       <p class="address__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
@@ -225,7 +231,7 @@
   </main>
   <footer class="main-footer">
     <a class="main-footer__logo">
-      <img src="images/icons/main-logo-mobile.svg" width="101" height="18" alt="Логотип Кэт Энерджи">
+      <img src="images/content-vector/main-logo-mobile.svg" width="128" height="24" alt="Логотип Кэт Энерджи">
     </a>
     <div class="main-footer__social social">
       <ul class="social__list">
@@ -242,6 +248,8 @@
     </div>
     <div class="main-footer__copyright copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__link-label ">HTML Academy</span>
+        <img class="copyright__link-logo" src="images/icons/html-academy-logo.svg" width="27" height="34" alt="Логотип Академии HTML">
       </a>
     </div>
   </footer>

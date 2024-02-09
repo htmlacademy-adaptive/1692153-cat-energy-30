@@ -1,5 +1,4 @@
 .nutrition__title {
-  text-align: center;
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
@@ -8,4 +7,69 @@
 
 .nutrition__description {
   color: $primary-text-color;
+  padding-left: 100px;
+}
+
+.nutrition__item {
+  margin-bottom: 26px;
+}
+
+.nutrition__item--leaf {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../images/icons/leaf-icon.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition__item--leaf {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.nutrition__item--pounder {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../images/icons/pounder-icon.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition__item--pounder {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.nutrition__item--tableware {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../images/icons/tableware-icon.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition__item--tableware {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.nutrition__item--watch {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../images/icons/watch-icon.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition__item--watch {
+    width: 80px;
+    height: 80px;
+  }
 }
