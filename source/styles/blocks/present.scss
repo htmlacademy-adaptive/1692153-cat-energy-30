@@ -1,5 +1,51 @@
 .present {
-  background-color: $decoration-color;
+  min-width: 280px;
+  min-height: 290px;
+  background-image: url("../../images/backgrounds/background-catalog@2x@1x.jpg");
+  background-repeat: no-repeat;
+  // background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/backgrounds/background-catalog@2x@2x.jpg");
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    height: 60px;
+    background-image: url("../../images/icons/gift-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 112px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .present {
+    min-width: 707px;
+    min-height: 200px;
+    background-image: url("../../images/backgrounds/background-catalog-tablet@2x@1x.jpg");
+    background-repeat: no-repeat;
+    // background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/backgrounds/background-catalog-tablet@2x@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .present {
+    min-width: 245px;
+    min-height: 288px;
+    background-image: url("../../images/backgrounds/background-catalog-desktop@2x@1x.jpg");
+    background-repeat: no-repeat;
+    // background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/backgrounds/background-catalog-desktop@2x@2x.jpg");
+    }
+  }
 }
 
 .present__text {

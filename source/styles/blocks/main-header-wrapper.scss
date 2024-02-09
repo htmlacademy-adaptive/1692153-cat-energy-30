@@ -1,0 +1,34 @@
+/* stylelint-disable indentation */
+.main-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-header__logo {
+  display: block;
+  width: 33px;
+  height: 38px;
+  background-image: url("../../images/icons/stack.svg#main-logo-mobile(decor)");
+  background-repeat: no-repeat;
+}
+}
+
+// // .main-header-wrapper {
+// //   display: flex;
+// //   justify-content: space-between;
+// // }
+
+// .main-header__logo-decor {
+//   display: block;
+//   width: 33px;
+//   height: 38px;
+//   background-image: url("../../images/icons/stack.svg#main-logo-mobile(decor)");
+//   background-repeat: no-repeat;
+// }
+
+// @media (min-width: $tablet-width) {
+//   .main-header__logo {
+//     display: none;
+//   }
+// }
