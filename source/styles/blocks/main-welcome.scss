@@ -1,3 +1,26 @@
+.main-welcome {
+  position: relative;
+  width: 320px;
+  height: 302px;
+  background-image: url("../../images/backgrounds/index-background-mobile@2x@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.rectangle {
+  position: absolute;
+  top: -1px;
+  width: 320px;
+  height: 304px;
+  background-image: url("../../images/backgrounds/index-green-rectangle@2x@2x.png");
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.main-container__image {
+  position: absolute;
+  z-index: 3;
+}
+
 .main-welcome__title {
   text-align: center;
   font-family: $secondary-font;
@@ -5,7 +28,7 @@
   font-weight: 400;
   line-height: 36px;
   color: $secondary-color;
-  background-color: $decoration-color;
+  // background-color: $decoration-color;
 }
 
 .main-welcome__slogan {
@@ -15,7 +38,7 @@
   text-transform: uppercase;
 }
 
-.main--welcome__button a {
+.main-welcome__button a {
   color: $secondary-color;
   text-decoration: none;
 }
