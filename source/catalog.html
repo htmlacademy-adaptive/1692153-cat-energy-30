@@ -12,6 +12,7 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page-body">
+    <div class="page-wrapper">
     <header class="main-header">
       <div class="main-header__wrapper">
         <span class="main-header__logo"></span>
@@ -179,42 +180,44 @@
           </dl>
           <button class="gallery__button button" type="button">Заказать</button>
         </li>
+        <li>
+          <b class="gallery__more-goods">Показать еще 100500 товаров</b>
+          <p class="gallery__clarification">На самом деле вкусов гораздо больше!</p>
+          <button class="gallery__button gallery__button--show-all button">Показать все</button>
+        </li>
       </ul>
-      <b class="gallery__more-goods">Показать еще 100500 товаров</b>
-      <p class="gallery__clarification">На самом деле вкусов гораздо больше!</p>
-      <button class="gallery__button gallery__button--show-all button">Показать все</button>
     </section>
     <section class="extra-goods">
       <h2 class="extra-goods__title">Дополнительные товары</h2>
       <dl class="extra-goods__list">
-        <div class="extra-goods__item">
-          <span class="extra-goods__product">Сахарозаменитель</span>
-          <dt class="extra-goods__nomination">1 упаковка (100 г)</dt>
-          <dd class="extra-goods__value">200 ₽</dd>
-        </div>
-        <button class="extra-goods__button button">Заказать</button>
+        <ul class="extra-goods__item">
+          <li class="extra-goods__product">Сахарозаменитель</li>
+          <li class="extra-goods__nomination">1 упаковка (100 г)</li>
+          <li class="extra-goods__value">200 ₽</li>
+          <li><button class="extra-goods__button button">Заказать</button></li>
+        </ul>
         <hr>
-        <div class="extra-goods__item">
-          <span class="extra-goods__product">питьевая вода</span>
-          <dt class="extra-goods__nomination">5 литров</dt>
-          <dd class="extra-goods__value">50 ₽</dd>
-        </div>
-        <button class="extra-goods__button button">Заказать</button>
+        <ul class="extra-goods__item">
+          <li class="extra-goods__product">питьевая вода</li>
+          <li class="extra-goods__nomination">5 литров</li>
+          <li class="extra-goods__value">50 ₽</li>
+        <button class="extra-goods__button button">Заказать</button></li>
+        </ul>
         <hr>
-        <div class="extra-goods__item">
-          <span class="extra-goods__product">молоко</span>
-          <dt class="extra-goods__nomination">1 литр</dt>
-          <dd class="extra-goods__value">100 ₽</dd>
-        </div>
+        <ul class="extra-goods__item">
+          <li class="extra-goods__product">молоко</li>
+          <li class="extra-goods__nomination">1 литр</li>
+          <li class="extra-goods__value">100 ₽</li>
         <button class="extra-goods__button button">Заказать</button>
+        </ul>
         <hr>
-        <div class="extra-goods__item">
-          <span class="extra-goods__product">витамины</span>
-          <dt class="extra-goods__nomination">1 упаковка (30 г)</dt>
-          <dd class="extra-goods__value">300 ₽</dd>
-        </div>
-        <button class="extra-goods__button button">Заказать</button>
-      </dl>
+        <ul class="extra-goods__item">
+          <li class="extra-goods__product">витамины</li>
+          <li class="extra-goods__value">300 ₽</li>
+          <li class="extra-goods__nomination">1 упаковка (30 г)</li>
+          <li class="extra-goods__value">300 ₽</li>
+          <li><button class="extra-goods__button button">Заказать</button></li>
+        </ul>
     <hr>
     <div class="present">
       <p class="present__text">
@@ -229,29 +232,33 @@
       <p class="address__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </section>
   </main>
-  <footer class="main-footer">
-    <a class="main-footer__logo">
-      <img src="images/content-vector/main-logo-mobile.svg" width="128" height="24" alt="Логотип Кэт Энерджи">
-    </a>
-    <div class="main-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
-        </li>
-      </ul>
-    </div>
-    <div class="main-footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="copyright__link-label ">HTML Academy</span>
-        <img class="copyright__link-logo" src="images/icons/html-academy-logo.svg" width="27" height="34" alt="Логотип Академии HTML">
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <a class="footer__logo">
+        <img src="images/content-vector/main-logo-mobile.svg" width="128" height="24" alt="Логотип Кэт Энерджи">
       </a>
+      <hr class="footer__separate-line">
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
+          </li>
+        </ul>
+      </div>
+      <hr class="footer__separate-line">
+      <div class="footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+          <img class="copyright__link-logo" src="images/icons/html-academy-logo.svg" width="27" height="34" alt="Логотип Академии HTML">
+        </a>
+      </div>
     </div>
   </footer>
-  </body>
+</div>
+</body>
 </html>

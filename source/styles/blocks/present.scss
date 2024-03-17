@@ -3,11 +3,11 @@
   min-height: 290px;
   background-image: url("../../images/backgrounds/background-catalog@2x@1x.jpg");
   background-repeat: no-repeat;
-  // background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../images/backgrounds/background-catalog@2x@2x.jpg");
   }
+
 
   &::before {
     content: "";
@@ -26,7 +26,6 @@
     min-height: 200px;
     background-image: url("../../images/backgrounds/background-catalog-tablet@2x@1x.jpg");
     background-repeat: no-repeat;
-    // background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../images/backgrounds/background-catalog-tablet@2x@2x.jpg");

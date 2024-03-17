@@ -12,5 +12,8 @@
   text-transform: uppercase;
 }
 
-
-
+@media (min-width: $desktop-width) {
+  .text-fields__wrapper {
+    display: flex;
+  }
+}

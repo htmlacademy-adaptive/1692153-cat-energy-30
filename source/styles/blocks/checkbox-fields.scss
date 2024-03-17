@@ -13,3 +13,9 @@
   color: $primary-text-color;
   text-decoration: uppercase;
 }
+
+@media (min-width: $desktop-width) {
+  .checkbox-fields__list {
+    display: flex;
+  }
+}

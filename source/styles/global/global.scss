@@ -1,3 +1,6 @@
+.page__body {
+  height: 100%;
+}
 
 body {
   font-family: $primary-font;
@@ -20,10 +23,6 @@ body {
   border: none;
 }
 
-li {
-  list-style-type: none;
-}
-
 a {
   text-decoration: none;
 }
@@ -44,8 +43,16 @@ a {
   text-transform: uppercase;
 }
 
-*,
-*::before,
- *::after {
-  box-sizing: border-box;
+li {
+  list-style-type: none;
 }
+
+fieldset {
+  border: none;
+}
+
+// *,
+// *::before,
+//  *::after {
+//   box-sizing: border-box;
+// }

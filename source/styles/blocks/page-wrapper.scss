@@ -1,0 +1,92 @@
+.page-wrapper {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1440px;
+}
+
+@media (min-width: $tablet-width) {
+  .page__wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__wrapper {
+    width: 1440px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    width: 1440px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    width: 1440px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-welcome {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-welcome {
+    width: 1440px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: 1440px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    width: 1440px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .footer {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    width: 1440px;
+  }
+}
+
+
