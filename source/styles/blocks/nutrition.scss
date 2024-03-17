@@ -1,3 +1,24 @@
+// .nutrition__wrapper {
+//   margin: 0 auto;
+// }
+
+@media (min-width: $tablet-width) {
+  .nutrition__list {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    grid-template-rows: 280px 280px;
+    column-gap: 153px;
+    row-gap: 37px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nutrition__list {
+    grid-template-columns: 230px 230px 230px 230px;
+    grid-template-rows: 280px;
+  }
+}
+
 .nutrition__title {
   font-family: $secondary-font;
   font-size: 36px;

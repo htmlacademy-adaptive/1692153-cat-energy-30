@@ -40,8 +40,16 @@ a {
   text-transform: uppercase;
 }
 
-*,
-*::before,
- *::after {
-  box-sizing: border-box;
+li {
+  list-style-type: none;
 }
+
+fieldset {
+  border: none;
+}
+
+// *,
+// *::before,
+//  *::after {
+//   box-sizing: border-box;
+// }

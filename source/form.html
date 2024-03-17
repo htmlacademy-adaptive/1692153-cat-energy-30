@@ -12,6 +12,7 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page-body">
+    <div class="page-wrapper">
     <header class="main-header">
       <div class="main-header__wrapper">
         <span class="main-header__logo"></span>
@@ -41,7 +42,9 @@
         </nav>
     </header>
   <main class="form-container">
+    <form class="form-fields" action="https://echo.htmlacademy.ru/" method="get">
     <h1 class="form-container__title">Подбор программы</h1>
+    <div class="text-fields__wrapper">
     <section class="text-fields">
       <fieldset class="text-fields__questionary">
         <legend class="text-fields__legend">
@@ -91,6 +94,7 @@
           </li>
         </ul>
       </fieldset>
+    </div>
     </section>
     <section class="contact-fields">
       <fieldset class="contact-fields__email-tel">
@@ -157,30 +161,35 @@
       <h4 class="address__title">Приглашаем к сотрудничеству дилеров!</h4>
       <p class="address__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
     </section>
+    </form>
   </main>
-  <footer class="main-footer">
-    <a class="main-footer__logo">
-      <img src="images/content-vector/main-logo-mobile.svg" width="128" height="24" alt="Логотип Кэт Энерджи">
-    </a>
-    <div class="main-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
-        </li>
-      </ul>
-    </div>
-    <div class="main-footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="copyright__link-label ">HTML Academy</span>
-        <img class="copyright__link-logo" src="images/icons/html-academy-logo.svg" width="27" height="34" alt="Логотип Академии HTML">
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <a class="footer__logo">
+        <img src="images/content-vector/main-logo-mobile.svg" width="128" height="24" alt="Логотип Кэт Энерджи">
       </a>
+      <hr class="footer__separate-line">
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
+          </li>
+        </ul>
+      </div>
+      <hr class="footer__separate-line">
+      <div class="footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+          <img class="copyright__link-logo" src="images/icons/html-academy-logo.svg" width="27" height="34" alt="Логотип Академии HTML">
+        </a>
+      </div>
     </div>
   </footer>
+  </div>
   </body>
 </html>

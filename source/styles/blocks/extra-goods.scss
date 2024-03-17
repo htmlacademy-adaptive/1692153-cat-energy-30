@@ -18,3 +18,9 @@
   line-height: 14px;
   color: $primary-text-color;
 }
+
+@media (min-width: $desktop-width) {
+  .extra-goods__item {
+    display: flex;
+  }
+}

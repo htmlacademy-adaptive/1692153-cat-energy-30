@@ -12,6 +12,7 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
+    <div class="page-wrapper">
     <header class="main-header">
         <a class="main-header__logo" href="#">
           <picture>
@@ -21,7 +22,9 @@
           </picture>
         </a>
         <nav class="main-nav main-nav--clossed main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--current">
@@ -38,32 +41,38 @@
         </nav>
     </header>
     <main class="main-container">
-      <div class="main-welcome">
-      <h1 class="main-welcome__title">Функциональное питание для котов</h1>
-      <p class="main-welcome__slogan">Занялся собой? Займись котом!</p>
-      <picture>
+      <section class="main-welcome">
+        <h1 class="main-welcome__title">Функциональное питание для котов</h1>
+        <p class="main-welcome__slogan">Занялся собой? Займись котом!</p>
+        <picture>
         <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/content-images/index-can-desktop@2x@1x.jpg 1x, images/content-images/index-can-desktop@2x@2x.jpg 2x" width="552" height="449">
         <source type="image/jpeg" media="(min-width: 768px)" srcset="images/content-images/index-can-tablet1@2x@1x.jpg 1x, images/content-images/index-can-tablet1@2x@2x.jpg 2x" width="709" height="609">
         <img class="main-container__image" src="images/content-images/index-can-mobile1@2x@1x.jpg" srcset="images/content-images/index-can-mobile1@2x@2x.jpg 2x" width="280" height="270" alt="Главный логотип кошачьего питания"><br>
-      </picture>
-      <span class="rectangle"></span>
-      <button class="main-welcome__button button">
+        </picture>
+        <div class="rectangle-layer"></div>
+        <button class="main-welcome__button button">
         <a href="catalog.html">Подобрать программу</a>
-      </button>
-      </div>
+        </button>
+      </section>
       <section class="advantages">
-        <div class="advantages__wrapper">
-          <h3 class="advantages__title advantages__title--cat-slim">Похудение</h3>
-          <p class="advantages__description">
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__title advantages__title--cat-slim">Похудение</h3>
+            <p class="advantages__description">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-          </p>
-          <a class="advantages__link" href="#">Каталог slim</a><br>
-          <h3 class="advantages__title advantages__title--cat-pro">Набор массы</h3>
-          <p class="advantages__description">
+            </p>
+            <hr class="advantages__separate-line">
+            <a class="advantages__link" href="#">Каталог slim</a><br>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__title advantages__title--cat-pro">Набор массы</h3>
+            <p class="advantages__description">
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-          </p>
-          <a class="advantages__link" href="#">Каталог pro</a>
-        </div>
+            </p>
+            <hr class="advantages__separate-line">
+            <a class="advantages__link" href="#">Каталог pro</a>
+          </li>
+        </ul>
       </section>
       <section class="nutrition">
         <div class="nutrition__wrapper">
@@ -122,29 +131,33 @@
         <p class="address__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </section>
     </main>
-    <footer class="main-footer">
-      <a class="main-footer__logo">
-        <img src="images/content-vector/main-logo-mobile.svg" width="128" height="24" alt="Логотип Кэт Энерджи">
-      </a>
-      <div class="main-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="main-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="copyright__link-label ">HTML Academy</span>
-          <img class="copyright__link-logo" src="images/icons/html-academy-logo.svg" width="27" height="34" alt="Логотип Академии HTML">
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <a class="footer__logo">
+          <img src="images/content-vector/main-logo-mobile.svg" width="128" height="24" alt="Логотип Кэт Энерджи">
         </a>
+        <hr class="footer__separate-line">
+        <div class="footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
+            </li>
+          </ul>
+        </div>
+        <hr class="footer__separate-line">
+        <div class="footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+            <img class="copyright__link-logo" src="images/icons/html-academy-logo.svg" width="27" height="34" alt="Логотип Академии HTML">
+          </a>
+        </div>
       </div>
     </footer>
+  </div>
   </body>
 </html>

@@ -11,3 +11,16 @@
   color: $primary-text-color;
   text-transform: uppercase;
 }
+
+@media (min-width: $desktop-width) {
+  .contact-fields__list {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact-fields__item:first-child {
+    margin-right: 81px;
+  }
+}
+
